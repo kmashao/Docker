@@ -1,14 +1,14 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    12                                                 :+:      :+:    :+:    #
+#    14                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: kmashao <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/30 16:57:48 by kmashao           #+#    #+#              #
-#    Updated: 2019/10/30 17:51:48 by kmashao          ###   ########.fr        #
+#    Created: 2019/10/30 17:49:29 by kmashao           #+#    #+#              #
+#    Updated: 2019/10/30 17:51:01 by kmashao          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-docker pull mysql
-docker run --name spawning-pool --restart on-failure  -v hatchery -e MYSQL_DATABASE=zerglings -e MYSQL_ROOT_PASSWORD=Kerrigan -d mysql
+docker pull wordpress
+docker run --name lair -p 8080:80 -d wordpress
