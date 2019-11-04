@@ -1,0 +1,1 @@
+docker service create --name marines --network overmind -e OC_USERNAME=kmashao -e OC_PASSWD=wtc123 --replicas=2 42school/marine-squad
