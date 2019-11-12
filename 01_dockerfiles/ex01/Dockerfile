@@ -20,3 +20,6 @@ ENV TS3SERVER_LICENSE=accept
 WORKDIR /opt/teamspeak
 
 ENTRYPOINT sh /opt/teamspeak/ts3server_minimal_runscript.sh
+
+#build it "docker build -t ex01 ."
+#run server "docker run -it  -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01"
