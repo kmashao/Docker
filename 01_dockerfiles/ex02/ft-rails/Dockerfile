@@ -13,3 +13,5 @@ RUN bundle update
 RUN bundle install
 RUN rails db:create
 RUN rake db:migrate
+
+#build it "docker build -t ft-rails:on-build ."
